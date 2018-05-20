@@ -1,0 +1,74 @@
+html, body {
+	background: url(header.jpg) no-repeat center	center	fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+  	overflow: hidden;
+  	height: 100%;
+  	font-family: 'Oswald', sans-serif;
+}
+
+.container {
+	height: 100%;
+	margin: 50px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header {
+	font-size: 2.5em;
+}
+
+.start {
+	display: flex;
+	margin-bottom: 10%;
+}
+
+.button {
+  background-color: rgba(255,255,255,0);
+  border: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  padding: 10px 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -2px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
